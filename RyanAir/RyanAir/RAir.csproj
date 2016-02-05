@@ -100,9 +100,7 @@
     </Content>
     <Content Include="scripts\angular.min.js.map" />
     <Content Include="Karma\package.json" />
-    <Content Include="Karma\run-tests-build.bat__" />
     <Content Include="Karma\run-tests-dev.bat" />
-    <Content Include="Karma\run-tests-dev.bat__" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -116,7 +114,6 @@
     <Content Include="app\main.js" />
     <Content Include="app\templates\ryanAirFlights.html" />
     <Content Include="index.html" />
-    <Content Include="Karma\karma.conf.js" />
     <Content Include="Karma\karma.dev.conf.js" />
     <Content Include="Karma\karma.verbose.dev.conf.js" />
     <Content Include="scripts\angular-mocks.js" />
