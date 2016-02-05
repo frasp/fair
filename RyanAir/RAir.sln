@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RyanAir", "RyanAir\RyanAir.csproj", "{6B2095F7-0D29-4CCA-B6D4-12C698856012}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAir", "RyanAir\RAir.csproj", "{6B2095F7-0D29-4CCA-B6D4-12C698856012}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
