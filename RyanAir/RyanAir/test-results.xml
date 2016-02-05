@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="PhantomJS 1.9.8 (Windows 7)" package="" timestamp="2016-02-05T15:58:40" id="0" hostname="UC424230">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34"/>
+    </properties>
+  </testsuite>
+  <testsuite name="PhantomJS 1.9.8 (Windows 7)" package="" timestamp="2016-02-05T15:58:41" id="0" hostname="UC424230" tests="4" errors="0" failures="0" time="0.033">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34"/>
+    </properties>
+    <testcase name="Context doit être défini" time="0.013" classname="PhantomJS 1.9.8 (Windows 7).TU : Flights controller "/>
+    <testcase name="Context doit être défini" time="0.003" classname="PhantomJS 1.9.8 (Windows 7).TU : Flights controller "/>
+    <testcase name="la directive doit être correctement initialisée" time="0.014" classname="PhantomJS 1.9.8 (Windows 7).TU: ryanAirFlights directive"/>
+    <testcase name="appel getFlights" time="0.003" classname="PhantomJS 1.9.8 (Windows 7).TU: ryanAirFlights directive"/>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
