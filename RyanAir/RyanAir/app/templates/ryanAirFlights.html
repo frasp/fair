@@ -1,4 +1,15 @@
 ﻿<div id="RyanAirFlights">
-    Ryan Air Flights: <br />
-    {{ getFlights() }}
+    <div data-ng-repeat="fare in fares">
+        <div>
+            <span>{{fare.departureAirport.name}} -> </span>
+            <span>{{fare.arrivalAirport.name}} : </span>
+
+            <!--<div data-ryan-air-fares departure-airport="CRL" arrival-airport="CPH"></div>
+
+            <div data-ng-repeat="fare in fares"></div>
+            <span>{{fare.departureDate | date:'dd/MM/yyyy - H:mm'}} - </span>
+            <span>{{fare.price.value}} </span>
+            <span>{{fare.price.currencySymbol}}</span>-->
+        </div>
+    </div>
 </div>

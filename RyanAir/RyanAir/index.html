@@ -3,15 +3,16 @@
 <html data-ng-app="product">
     <body ng-controller="Flights as vm">
 
-        <input type="text" ng-model="vm.food" placeholder="Enter food" />
+        <input type="text" ng-model="vm.context.food" placeholder="Enter food" />
 
-        <p>Sriracha sauce is great with {{vm.food}}!</p>
+        <p>Sriracha sauce is great with {{vm.context.food}}!</p>
 
-        <div data-ryan-air-flights></div>
+        <div data-ryan-air-flights ryan-air-fares-data="vm.context.ryanAirFlights"></div>
 
         <script src="scripts/angular.min.js"></script>
         <script src="app/main.js"></script>
         <script src="app/controllers/flights-controller.js"></script>
         <script src="app/directives/ryanAirFlights-directive.js"></script>
+        <script src="app/services/ryanAirFlights-service.js"></script>
     </body>
 </html>

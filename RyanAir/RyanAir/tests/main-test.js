@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('product', []).config(function () {
+    angular.module('trip', []).config(function () {
 
     });
 })();
@@ -9,7 +9,7 @@
 
 describe('module Test', function () {
 
-    beforeEach(module('product', []));
+    beforeEach(module('trip', []));
 
     it('doit etre defini', function () {
         expect(true).toBeDefined();

@@ -94,6 +94,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\directives\ryanAirFares-directive.js" />
+    <Content Include="app\services\ryanAirFlights-service.js" />
+    <Content Include="app\templates\ryanAirFares.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -120,6 +123,7 @@
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="tests\controllers\flights-controller-test.js" />
+    <Content Include="tests\directives\ryanAirFares-directive-test.js" />
     <Content Include="tests\directives\ryanAirFlights-directive-test.js" />
     <Content Include="tests\main-test.js" />
     <Content Include="tests\scripts\angular-mocks.js" />
@@ -133,6 +137,7 @@
     <Content Include="tests\scripts\jquery-1.9.1.min.js" />
     <Content Include="tests\scripts\ui-grid-unstable.js" />
     <Content Include="tests\scripts\ui-grid-unstable.min.js" />
+    <Content Include="tests\services\ryanAirFlights-service-test.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -140,9 +145,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\filters\" />
-    <Folder Include="app\services\" />
+    <Folder Include="app\other\" />
     <Folder Include="tests\filters\" />
-    <Folder Include="tests\services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
