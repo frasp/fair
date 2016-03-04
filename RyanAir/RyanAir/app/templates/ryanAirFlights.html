@@ -4,12 +4,24 @@
             <span>{{fare.departureAirport.name}} -> </span>
             <span>{{fare.arrivalAirport.name}} : </span>
 
-            <!--<div data-ryan-air-fares departure-airport="CRL" arrival-airport="CPH"></div>
+            <div data-ng-repeat="flight in fare.flights | orderBy:'amount'">
+                <div data-ng-show="flight.departureDate.getDate() == flight.arrivalDate.getDate()">
+                    <span>
+                        <b>{{flight.departureDate | date:'dd/MM/yyyy'}}</b>: 
+                           {{flight.departureDate | date:'H:mm'}} - 
+                           {{flight.arrivalDate | date:'H:mm'}} 
+                           ({{flight.duration}}) - 
+                           {{flight.amount}} €
+                    </span>
+                </div>
 
-            <div data-ng-repeat="fare in fares"></div>
-            <span>{{fare.departureDate | date:'dd/MM/yyyy - H:mm'}} - </span>
-            <span>{{fare.price.value}} </span>
-            <span>{{fare.price.currencySymbol}}</span>-->
-        </div>
+                <div data-ng-show="flight.departureDate.getDate() != flight.arrivalDate.getDate()">
+                    <p>Le {{flight.departureDate | date:'dd/MM/yyyy'}}</p>
+                    <span>{{flight.departureDate | date:'dd/MM/yyyy - H:mm'}} -> </span>
+                    <span>{{flight.arrivalDate | date:'dd/MM/yyyy - H:mm'}}, </span>
+                    <span>{{flight.duration}}</span>
+                </div>
+            </div>
+       </div><br />
     </div>
 </div>

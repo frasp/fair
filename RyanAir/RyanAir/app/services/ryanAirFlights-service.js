@@ -11,7 +11,8 @@
     */
     function ryanAirFlightsService($http, $q) {
         return {
-            getRyanAirFlights: getRyanAirFlights
+            getRyanAirFlights: getRyanAirFlights,
+            getRyanAirFlightsForDestination: getRyanAirFlightsForDestination,
         };
 
         /**
@@ -39,6 +40,30 @@
             return deferred.promise;
         }
 
-        //https://desktopapps.ryanair.com/fr-fr/availability?ADT=1&CHD=0&DateOut=2016-02-24&Destination=BCN&FlexDaysOut=4&INF=0&Origin=BVA&RoundTrip=false&TEEN=0
+        /**
+        * @function getRyanAirFlights.
+        * @description : fonction renvoyant les vols entre 2 aéroports pour une date donnée et un nombre de jours de flexibilité.
+        * @param departureDate: date de départ.
+        * @param departureAirportCode: code de l'aéroport de départ.
+        * @param arrivalAirportCode: code de l'aéroport d'arrivée.
+        * @param flexDaysOut: nombre de jours de flexibilité.
+        */
+        function getRyanAirFlightsForDestination(departureDate, departureAirportCode, arrivalAirportCode, flexDaysOut) {
+            var response = null;
+            var deferred = $q.defer();
+
+            var apiUrl = 'https://desktopapps.ryanair.com/fr-fr/availability?ADT=1&CHD=0&DateOut=' + departureDate + '&Destination=' + arrivalAirportCode + '&FlexDaysOut=' + flexDaysOut + '&INF=0&Origin=' + departureAirportCode + '&RoundTrip=false&TEEN=0';
+
+            $http.get(apiUrl)
+                    .success(function (result) {
+                        response = result;
+                        deferred.resolve(response);
+
+                    }).error(function (data, error) {
+                        deferred.reject(error);
+                    });
+
+            return deferred.promise;
+        }
     };
 })();
